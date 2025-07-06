@@ -42,6 +42,3 @@ aws_data_pipeline/
 ├── cloudformation/
 └── README.md
 ```
-
-## Author
-Generated with ❤️ by ChatGPT
