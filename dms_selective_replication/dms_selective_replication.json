@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "1",
+      "object-locator": {
+        "schema-name": "public",
+        "table-name": "orders"
+      },
+      "rule-action": "include"
+    },
+    {
+      "rule-type": "transformation",
+      "rule-id": "2",
+      "rule-name": "2",
+      "rule-action": "remove-column",
+      "rule-target": "column",
+      "object-locator": {
+        "schema-name": "public",
+        "table-name": "orders",
+        "column-name": "internal_notes"
+      }
+    }
+  ]
+}

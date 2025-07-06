@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  DailyGlueTrigger:
+    Type: AWS::Glue::Trigger
+    Properties:
+      Name: DailyCSVJobTrigger
+      Type: SCHEDULED
+      Schedule: cron(0 0 * * ? *)
+      Actions:
+        - JobName: extract_to_csv
